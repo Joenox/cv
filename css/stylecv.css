@@ -1,18 +1,135 @@
-.name {
+@font-face {
+    font-family: 'quadrantaregular';
+    src: url('../font/quadranta-regular-webfont.woff2') ,
+         url('../font/quadranta-regular-webfont.woff') ;
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+  font-family: 'atwriter';
+  src: url('../font/atwriter.ttf');
+}
+@font-face {
+  font-family: 'Lobster';
+  src: url('../font/Lobster.otf');
+}
+
+body{
+  background-image: url("../image/fonds.png");
+}
+
+h3 {
+  font-family: 'Lobster';
+	color:#333;
+	line-height:1.4;
+	font-weight:bold 400;
+  text-align: center;
+}
+
+.navbar-collapse{
+  text-align: center;
+}
+
+.navbar-nav{
+  display: inline-block;
+  float: none;
+}
+
+.navbar-default .navbar-nav>li>a {
+  font-family:'quadrantaregular';
+  font-size: 4vh;
+  text-align: center;
+  color: red;
+}
+
+.box-1 {
+  font-family: 'quadrantaregular';
   background-image: url("../image/backgroundjolie2.jpg");
   color: red;
   font-weight: bold;
   text-align: center;
+  padding-top: 10%;
+  border:3px dotted #FFA119;
 }
+
 .img1 {
-  border-radius: 50%
+  border-radius: 50%;
+  width: 20%;
 }
-h2
-h3
-h4
-h5
-h6 {
+
+.row {
+  margin: 5px auto;
+}
+
+.profil {
+  font-family: 'atwriter';
+	padding-bottom:15px;
+	text-align:center;
+	margin:0px auto;
+	padding-top:10px;
+  border:3px dotted #FFA119;
+  background-color: rgba(255, 255, 255, 0.5)
+}
+
+.profil h2 {
+	font-weight:700;
+	font-family:sans-serif;
+	font-size:35px;
 	color:#333;
-	line-height:1.4;
-	font-weight:600;
+	margin:0;
+	padding:5px;
+}
+
+input {
+  width: 50%
+}
+
+.footer {
+  text-align: center;
+}
+
+@media screen and (max-width: 767px){
+
+  .navbar-default .navbar-nav>li>a {
+    font-family:'quadrantaregular';
+    text-align: center;
+    color: red;
+  }
+
+  .profil h2 {
+  	font-family:sans-serif;
+  	color:#333;
+  	margin:0;
+  	padding:5px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px){
+
+  .profil h2 {
+  	font-weight:200;
+  	font-family:sans-serif;
+  	color:#333;
+  	margin:0;
+  	padding:5px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px){
+
+  .navbar-default .navbar-nav>li>a {
+    font-family:'quadrantaregular';
+    text-align: center;
+    color: red;
+  }
+  .profil h2 {
+  	font-weight:700;
+  	font-family:sans-serif;
+  	color:#333;
+  	margin:0;
+  	padding:5px;
+  }
+
+}
+
+@media screen and (min-width: 1200px){
+
 }

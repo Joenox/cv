@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="css/bootstrap.min.css" rel="stylesheet" media="all">
+  <link href="css/stylecv.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+  <script src="js/bootstrap.min.js"></script>
+  <title> Curriculum Vitae</title>
+</head>
+<body>
+  <header>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-12 box-1">
+          <h2>Giovanna Delsaut</h2>
+          <a data-fancybox= "gallery" href="image/gio.jpg" target="_blank"><img src="image/giov.png" alt="gio" width="30%" class="img1"/></a>
+          <div class="row">
+            <div class="col-sm-6">
+              <p> Aspirante Développeur Web</p>
+            </div>
+            <div class="col-sm-6">
+              <p>Exploratrice dans l'âme</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav visible-xs hidden-sm hidden-md hidden-lg">
+            <li><a class="menu" data-toggle="collapse" data-target=".navbar-collapse" href="cvfr.html#aboutme">A Propos</a></li>
+            <li><a class="menu" data-toggle="collapse" data-target=".navbar-collapse" href="cvfr.html#skills">Compétence</a></li>
+            <li><a class="menu" data-toggle="collapse" data-target=".navbar-collapse" href="cvfr.html#contact">Contact</a></li>
+          </ul>
+          <ul class="nav navbar-nav hidden-xs visible-sm visible-md visible-lg">
+            <li><a class="menu active" href="cvfr.html#intro">A Propos</a></li>
+            <li><a class="menu" href="cvfr.html#skills">Compétence</a></li>
+            <li><a class="menu" href="cvfr.html#contact">Contact</a></li>
+            <li><a class="menu" href="cv.html">anglais</a></li>
+            <li><a class="menu" href="cvfr.html">français</a></li>
+            <li><a class="menu" href="pdf/DELSAUT.pdf" target="_blank"> Télécharger cv </a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <section class="container-fluid" id="intro">
+    <div class="row">
+      <div class="profil">
+        <h2>A Propos</h2>
+        <h3>  </h3>
+      </div>
+    </div>
+  </section>
+  <!--  skills -->
+  <section class= "specialties" id="skills">
+    <div class="container-fluid">
+      <div class= "row">
+        <div class="col-md-12  profil">
+          <h2>Compétences</h2>
+          <h3>...</h3>
+          <div class="row">
+            <div class="col-md-4 col-sm-4">
+              <h3>Experiences Extra-professionelles</h3>
+              <div>
+                <h5>Voyages</h5>
+                <h5>2013</h5>  <p>2 semaines en Pologne -Varsovie-</p>
+                <div>    <h5>2012</h5>
+                  <p>2 semaines en Angleterre -Londres- Brighton  </p>
+                </div>
+                <div>
+                  <h5>2007-2009</h5>
+                  <p>environ 6mois passés en Allemagne -Oberhausen et autres régions-  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-4">
+              <h3> Etudes </h3>
+              <div>
+                <h4> Formation développeur web</h4>
+                <h5>JAN 2017 - JUILLET 2017</h5>
+                <p>Pop School Valenciennes</p>
+              </div>
+              <div>
+                <h4>Classe préparatoire aux grandes écoles </h4>
+                <h5>SEPT 2009 - JUIN 2010</h5>
+                <p>Arras Lycee Gambetta</p>
+              </div>
+              <div>
+                <h4>Baccalaureate Littéraire </h4>
+                <h5>SEPT 2008 - JUIN 2009</h5>
+                <p>Lycée Watteau Valenciennes</p>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-4">
+              <h3>Experiences Professionnelles</h3>
+              <h5>2013-2015</h5>
+              <p>Employée chez un primeur Fruits&Légumes et épiceries fines </p>
+              <h5>2010-2011</h5>
+              <p> Secrétaire de Santé pour la mutuelle SMENO bnp paribas </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- formulaire -->
+  <section id="contact">
+    <div class="container-fluid">
+      <fieldset class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12  profil">
+          <h2>Contact</h2>
+          <form method="post" id="form" name="myform" action="php/traitement.php" onsubmit="checkForms()">
+            <div class="row">
+              <div class="name col-md-offset-2 col-md-8 col-md-offset-2 col-sm-12">
+                <label for="speudo">Nom </label>
+                <input type="text" name="pseudo" id="pseudo" placeholder="..."required/>
+              </div>
+            </div>
+            <div class="row">
+              <div class="email  col-md-offset-2 col-md-8 col-md-offset-2  col-sm-12">
+                <label for="email">Email </label>
+                <input type="email" name="email" id="email" placeholder="..."required/>
+              </div>
+            </div>
+            <div class="row">
+              <div class="subject  col-md-offset-2 col-md-8 col-md-offset-2 col-sm-12">
+                <label for="subject">Objet </label>
+                <input type="text" name="subject" id="subject" placeholder="..."required/>
+              </div>
+            </div>
+            <div class="row">
+              <div class="msg col-md-offset-2 col-md-8 col-md-offset-2 col-sm-12">
+                <label for="msg">Message </label>
+                <input type="text" name="msg" id="msg" placeholder="..."required/>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-offset-4 submit col-md-4 col-md-offset-4 col-sm-offset-2 col-sm-8  col-sm-offset-2">
+                <input type="submit" value="Envoyer" id="submit" />
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </fieldset>
+  </div>
+</section>
+<footer>
+  <section class="footer" id="footer">
+    <div class="container-fluid">
+      <a href="https://fr.linkedin.com/in/giovanna-delsaut-4b284a138?trk=profile-badge" target="_blank"><img src="image/linkedin-dreamstale45.png" alt="linkedIn"></a>
+      <a href="https://www.facebook.com/giovanna.delsaut" target="_blank"><img src="image/facebook-dreamstale25.png" alt="fb"></a>
+    </div>
+  </section>
+</footer>
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.fancybox.min.js"></script>
+</body>
+</html>
